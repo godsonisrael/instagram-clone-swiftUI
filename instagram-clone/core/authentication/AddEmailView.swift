@@ -28,10 +28,11 @@ struct AddEmailView: View {
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .modifier(IGTextFieldModifier())
             
-            Button {
-                print("Login")
+            NavigationLink {
+                CreateUsernameView()
+                    .navigationBarBackButtonHidden()
             } label: {
-                Text("Login")
+                Text("Next")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(width: 350, height: 44)

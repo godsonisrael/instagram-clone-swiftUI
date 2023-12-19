@@ -1,5 +1,5 @@
 //
-//  CreateUsernameView.swift
+//  CreatePasswordView.swift
 //  instagram-clone
 //
 //  Created by Godson on 19/12/23.
@@ -7,29 +7,34 @@
 
 import SwiftUI
 
-struct CreateUsernameView: View {
-    @State private var username = ""
+struct CreatePasswordView: View {
+    @State private var password = ""
+    @State private var confirmPassword = ""
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack(spacing: 12) {
-            Text("Create username")
+            Text("Create a password")
                 .font(.title2)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .padding(.top)
             
-            Text("You'll use this email to sign in to your account")
+            Text("You're password must be atleast 8 characters in length")
                 .font(.footnote)
                 .foregroundStyle(Color(.systemGray))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("Enter your email", text: $username)
+            SecureField("Enter your password", text: $password)
+                .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                .modifier(IGTextFieldModifier())
+            
+            SecureField("Confirm your password", text: $password)
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .modifier(IGTextFieldModifier())
             
             NavigationLink {
-                CreatePasswordView()
+                CompleteSignUp()
                     .navigationBarBackButtonHidden()
             } label: {
                 Text("Next")
@@ -58,5 +63,5 @@ struct CreateUsernameView: View {
 }
 
 #Preview {
-    CreateUsernameView()
+    CreatePasswordView()
 }

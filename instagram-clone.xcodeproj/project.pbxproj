@@ -24,6 +24,8 @@
 		38D889CC2B3134D5003238C6 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D889CB2B3134D5003238C6 /* AddEmailView.swift */; };
 		38D889CE2B313B6F003238C6 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D889CD2B313B6F003238C6 /* IGTextFieldModifier.swift */; };
 		38D889D02B313CED003238C6 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D889CF2B313CED003238C6 /* CreateUsernameView.swift */; };
+		38D889D22B3142D0003238C6 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D889D12B3142D0003238C6 /* CreatePasswordView.swift */; };
+		38D889D42B3145CA003238C6 /* CompleteSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D889D32B3145CA003238C6 /* CompleteSignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		38D889CB2B3134D5003238C6 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		38D889CD2B313B6F003238C6 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 		38D889CF2B313CED003238C6 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
+		38D889D12B3142D0003238C6 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
+		38D889D32B3145CA003238C6 /* CompleteSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,8 @@
 				38D889C92B312D51003238C6 /* LoginView.swift */,
 				38D889CB2B3134D5003238C6 /* AddEmailView.swift */,
 				38D889CF2B313CED003238C6 /* CreateUsernameView.swift */,
+				38D889D12B3142D0003238C6 /* CreatePasswordView.swift */,
+				38D889D32B3145CA003238C6 /* CompleteSignUp.swift */,
 			);
 			path = authentication;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D889D42B3145CA003238C6 /* CompleteSignUp.swift in Sources */,
 				38982A5C2B2A571100D74B70 /* FeedCell.swift in Sources */,
 				38982A552B2A49DC00D74B70 /* ProfileView.swift in Sources */,
 				38982A192B2A46C100D74B70 /* ContentView.swift in Sources */,
@@ -403,6 +410,7 @@
 				38982A582B2A4F7200D74B70 /* UserStatView.swift in Sources */,
 				38982A5A2B2A56DE00D74B70 /* FeedView.swift in Sources */,
 				38982A532B2A489E00D74B70 /* MainTabView.swift in Sources */,
+				38D889D22B3142D0003238C6 /* CreatePasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
